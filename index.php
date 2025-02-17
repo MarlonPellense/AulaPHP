@@ -38,7 +38,7 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: url(https://wallpaperaccess.com/full/344070.jpg);
+            background-image: url(https://th.bing.com/th/id/R.834024e9ee06e44550a6eced58598257?rik=Bsn8sgF9CCy2Kw&riu=http%3a%2f%2farmory.visualsoldiers.com%2fwp-content%2fuploads%2f2017%2f11%2fretro-palm2-min.gif&ehk=bNNbMxnhEfUmy7JX3DR7zLDk8uaBKBhBy2fArBuhSGE%3d&risl=&pid=ImgRaw&r=0);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -47,7 +47,7 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {
             justify-content: center;
         }
         .tela-login{
-            background-color: rgba(207, 129, 27, 0.48);
+            background-color: rgba(116, 14, 23, 0.62);
             position:absolute;
             top:50%;
             left: 50%;
@@ -58,14 +58,16 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {
         }
 
         input{
+            background-color: rgba(148, 48, 110, 0.2);
             padding: 16px;
             border: none;
             outline: none;
             font-size: 18px;
+            color: #D5404A;
             border-radius: 20px;
         }
         button{
-            background-color: rgba(108, 48, 148, 0.8);
+            background-color: rgba(148, 48, 110, 0.8);
             border: none;
             outline: none;
             padding: 16px;
@@ -75,7 +77,7 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {
             font-size: 20px;
         }
         button:hover{
-            background-color: rgba(87, 29, 114, 0.8);
+            background-color: rgba(114, 29, 86, 0.8);
             cursor: pointer;
         }
 

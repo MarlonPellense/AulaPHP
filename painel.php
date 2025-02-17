@@ -10,7 +10,7 @@ include('protect.php');
     <title>Painel</title>
     <style>
         body{
-            background-image: url(https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1015903/settings_images/8SaFOfpQwOrjEbfBAQZV_ezgif.com-optimize.gif)
+            background-image: url(https://th.bing.com/th/id/R.834024e9ee06e44550a6eced58598257?rik=Bsn8sgF9CCy2Kw&riu=http%3a%2f%2farmory.visualsoldiers.com%2fwp-content%2fuploads%2f2017%2f11%2fretro-palm2-min.gif&ehk=bNNbMxnhEfUmy7JX3DR7zLDk8uaBKBhBy2fArBuhSGE%3d&risl=&pid=ImgRaw&r=0)
 
 
 
