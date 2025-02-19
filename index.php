@@ -1,16 +1,19 @@
 <?php #Adicionar botão de e-mail
 include('conexao.php');
-if(isset($_POST['usuario']) && isset($_POST['senha'])) {
+if(isset($_POST['usuario']) && isset($_POST['senha']) && isset($_POST['email'])) {
 
     if(strlen($_POST['usuario']) == 0) {
         echo "Usuario não informado";
     } else if(strlen($_POST['senha']) == 0) {
         echo "Preencha sua senha";
+    } else if(strlen($_POST['email']) == 0) {
+        echo "Preencha seu e-mail";
     } else {
 
         $usuario = $mysqli->real_escape_string($_POST['usuario']);
         $senha = $mysqli->real_escape_string($_POST['senha']);
-        $sql_code = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND senha = '$senha'";
+        $email = $mysqli->real_escape_string($_POST['email']);
+        $sql_code = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND senha = '$senha' AND email = '$email'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
         $quantidade = $sql_query->num_rows;
 
@@ -23,7 +26,7 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {
             $_SESSION['nome'] = $usuario['nome'];
             header("Location: painel.php");
         } else {
-            echo "Falha ao logar! E-mail ou senha incorretos";
+            echo "Falha ao logar! E-mail, nome ou senha incorretos";
         }
     }
 }
@@ -91,6 +94,8 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {
             <input type="text" name="usuario" placeholder="Usuário">
             <br><br>      
             <input type="password" name="senha" placeholder="Senha">
+            <br><br>   
+            <input type="text" name="email" placeholder="E-mail">
             <br><br>   
             <button type="submit">Entrar</button>
     </form>
